@@ -1,0 +1,104 @@
+/* Matrix Grid Container */
+.matrix-grid-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Matrix Row */
+  .matrix-row {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Matrix Cell */
+  .matrix-cell {
+    width: 60px;
+    height: 40px;
+    padding: 0.25rem;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+  }
+  
+  .matrix-cell:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 1px #3b82f6;
+  }
+  
+  /* KaTeX Display */
+  .katex-container {
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .katex-display {
+    margin: 0;
+    padding: 0.25rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .katex {
+    font-size: 1.1em;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 640px) {
+    .matrix-cell {
+      width: 50px;
+      height: 35px;
+      font-size: 0.8rem;
+      padding: 0.2rem;
+    }
+    
+    .matrix-row {
+      gap: 0.15rem;
+      margin-bottom: 0.15rem;
+    }
+  
+    .katex {
+      font-size: 0.9em;
+    }
+  }
+  
+  /* Operation Boxes */
+  .bg-white {
+    background-color: white;
+  }
+  
+  .bg-gray-50 {
+    background-color: #f9fafb;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Error Message */
+  .bg-red-50 {
+    background-color: #fef2f2;
+  }
+  
+  .border-red-500 {
+    border-color: #ef4444;
+  }
+  
+  .text-red-700 {
+    color: #b91c1c;
+  }
+  
+  /* Remove all scrollbars */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  * {
+    scrollbar-width: none;
+  }

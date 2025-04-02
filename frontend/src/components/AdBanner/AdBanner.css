@@ -1,0 +1,69 @@
+/* Base Ad Container */
+.ad-container {
+    background-color: #f8fafc;  /* Light slate-50 */
+    border: 1px solid #e2e8f0;  /* slate-200 */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Skyscraper Specific (160x600) */
+  .ad-skyscraper {
+    width: 160px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  
+  /* Ad Label (ADVERTISEMENT text) */
+  .ad-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #64748b;  /* slate-500 */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Ad Content Area */
+  .ad-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Image Ads (Recommended for skyscrapers) */
+  .ad-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    border: 1px solid #e2e8f0;  /* slate-200 */
+  }
+  
+  /* Text Fallback Ads */
+  .ad-text {
+    font-size: 0.8rem;
+    color: #334155;  /* slate-700 */
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  /* Right Sidebar Specific */
+  .ad-right {
+    position: sticky;
+    top: 1rem;
+    margin-left: 1rem;
+  }
+  
+  /* Mobile Fallback (Bottom Banner) */
+  @media (max-width: 767px) {
+    .ad-mobile-banner {
+      width: 100%;
+      height: auto;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  }

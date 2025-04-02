@@ -1,0 +1,44 @@
+.matrix-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.matrix-cell {
+  width: 60px;
+  height: 40px;
+  padding: 0.25rem;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.matrix-cell:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+/* Remove all scrollbars */
+.katex-display {
+  margin: 0.5em 0 !important;
+  text-align: center !important;
+  overflow: hidden !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .matrix-cell {
+    width: 50px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Ensure no scrollbars appear */
+body {
+  overflow-x: hidden;
+}

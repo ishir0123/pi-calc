@@ -1,0 +1,51 @@
+.matrix-grid-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.matrix-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.matrix-cell {
+  width: 60px;
+  height: 40px;
+  padding: 0.25rem;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.matrix-cell:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.katex-display {
+  display: inline-block;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .matrix-cell {
+    width: 50px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+}

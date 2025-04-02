@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --math-blue: #2563eb;
+    --math-pi: #3b82f6; /* Pi-themed color */
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-gray-50;
+}
